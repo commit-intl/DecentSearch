@@ -1,0 +1,22 @@
+{
+  "name": "protosearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron src/test-app/main.js",
+    "test": "electron src/test-app/main.js",
+    "testapp": "electron src/test-app/main.js"
+  },
+  "author": "Dustin Hagemeier <dustin@commit.international>",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.1.4"
+  },
+  "dependencies": {
+    "@sindresorhus/fnv1a": "github:shynrou/fnv1a#feature/bigint",
+    "chalk": "^2.4.2",
+    "electron-rebuild": "^1.8.5",
+    "js-sha256": "^0.9.0"
+  }
+}
