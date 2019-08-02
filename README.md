@@ -10,4 +10,10 @@ DecentSearch consists of independent interconnected servers. Each contributing i
 </p>
 
 ---
+
+# How does it work?
+
+Each server manages 
+
+---
 Interested to contribute? [contact me](mailto:dustin@commit.international)

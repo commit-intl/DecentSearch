@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 102.12917 33.866666"
    height="128"
-   width="386">
+   width="386"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.4 (33fec40, 2019-01-16)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1869"
+     inkscape:window-height="1025"
+     id="namedview25"
+     showgrid="false"
+     inkscape:zoom="0.9352"
+     inkscape:cx="65.76"
+     inkscape:cy="64"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="text817-3" />
   <defs
      id="defs2" />
   <metadata
@@ -102,21 +126,58 @@
         </g>
       </g>
     </g>
-    <text
-       id="text817-3"
-       y="17.277792"
-       x="44.336731"
-       style="font-style:normal;font-weight:normal;font-size:21.97678566px;line-height:0.69999999;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.54941964"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.69999999;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#fe8d00;fill-opacity:1;stroke-width:0.54941964"
-         y="17.277792"
-         x="44.336731"
-         id="tspan815-6">DECENT</tspan><tspan
-         id="tspan835-2"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.69999999;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#fe8d00;fill-opacity:1;stroke-width:0.54941964"
-         y="33.714817"
-         x="44.336731"><tspan
-           id="tspan837-1"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.69999999;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#008dfe;fill-opacity:1;stroke-width:0.54941964">SEARCH</tspan></tspan></text>
+    <g
+       aria-label="DECENTSEARCH"
+       style="font-style:normal;font-weight:normal;font-size:21.9768px;line-height:0.7;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5494"
+       id="text817-3">
+      <path
+         d="m 48.23,15.08 q 0.11,0 0.24,0 0.13,0 0.24,0 0.92,0 1.54,-0.35 0.64,-0.35 1.01,-0.97 0.4,-0.61 0.55,-1.45 0.17,-0.85 0.17,-1.87 0,-0.874 -0.13,-1.709 Q 51.72,7.916 51.39,7.278 51.06,6.641 50.49,6.267 49.92,5.872 49.02,5.872 q -0.18,0 -0.4,0.02 -0.22,0 -0.39,0.04 z m 6.5,-4.62 q 0,1.89 -0.48,3.24 -0.46,1.31 -1.3,2.15 -0.83,0.83 -2,1.23 -1.14,0.37 -2.53,0.37 -0.72,0 -1.42,-0.1 -0.69,-0.1 -1.48,-0.25 V 3.85 q 0.93,-0.198 1.74,-0.264 0.81,-0.07 1.52,-0.07 1.34,0 2.44,0.396 1.12,0.395 1.89,1.253 0.76,0.835 1.18,2.153 0.44,1.297 0.44,3.138 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#fe8d00;fill-opacity:1;stroke-width:0.5494"
+         id="path832" />
+      <path
+         d="M 56.71,17.28 V 3.674 h 8.24 v 2.242 h -5.54 v 3.055 h 4.82 v 2.239 h -4.82 v 3.83 h 6.02 v 2.24 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#fe8d00;fill-opacity:1;stroke-width:0.5494"
+         id="path834" />
+      <path
+         d="m 72.82,17.56 q -2.88,0 -4.4,-1.84 -1.51,-1.85 -1.51,-5.26 0,-1.687 0.46,-3.006 0.46,-1.318 1.27,-2.219 0.84,-0.924 1.96,-1.385 1.14,-0.484 2.48,-0.484 0.73,0 1.3,0.132 0.59,0.11 1.03,0.264 0.44,0.154 0.73,0.33 0.3,0.176 0.46,0.263 L 75.9,6.509 Q 75.39,6.18 74.66,5.96 73.96,5.718 73.04,5.718 q -0.64,0 -1.25,0.242 -0.6,0.22 -1.08,0.769 -0.46,0.527 -0.77,1.428 -0.29,0.901 -0.29,2.243 0,2.33 0.8,3.58 0.81,1.23 2.63,1.23 1.06,0 1.74,-0.24 0.7,-0.24 1.12,-0.48 l 0.68,2.13 q -0.57,0.35 -1.56,0.66 -0.97,0.28 -2.24,0.28 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#fe8d00;fill-opacity:1;stroke-width:0.5494"
+         id="path836" />
+      <path
+         d="M 78.69,17.28 V 3.674 h 8.24 v 2.242 h -5.54 v 3.055 h 4.81 v 2.239 h -4.81 v 3.83 h 6.02 v 2.24 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#fe8d00;fill-opacity:1;stroke-width:0.5494"
+         id="path838" />
+      <path
+         d="M 96.09,17.28 Q 95.17,15.01 94.07,12.77 92.99,10.51 91.74,8.245 V 17.28 H 89.3 V 3.674 h 2.18 q 0.61,0.967 1.23,2.11 0.61,1.121 1.18,2.242 0.6,1.12 1.08,2.174 0.51,1.06 0.86,1.85 V 3.674 h 2.44 V 17.28 Z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#fe8d00;fill-opacity:1;stroke-width:0.5494"
+         id="path840" />
+      <path
+         d="m 109.7,3.674 v 2.242 h -3.6 V 17.28 h -2.7 V 5.916 H 99.83 V 3.674 Z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#fe8d00;fill-opacity:1;stroke-width:0.5494"
+         id="path842" />
+      <path
+         d="m 49.44,31.74 q 0.68,0 1.12,-0.13 0.46,-0.16 0.72,-0.4 0.27,-0.26 0.35,-0.57 0.11,-0.33 0.11,-0.66 0,-0.42 -0.24,-0.75 -0.24,-0.33 -0.61,-0.57 -0.38,-0.26 -0.84,-0.46 -0.46,-0.22 -0.92,-0.4 -0.62,-0.22 -1.28,-0.5 -0.66,-0.29 -1.21,-0.73 -0.52,-0.44 -0.87,-1.07 -0.36,-0.66 -0.36,-1.63 0,-1.91 1.23,-2.99 1.26,-1.08 3.43,-1.08 1.26,0 2.18,0.29 0.94,0.28 1.58,0.64 l -0.79,2.08 q -0.55,-0.3 -1.23,-0.52 -0.66,-0.22 -1.54,-0.22 -2.15,0 -2.15,1.56 0,0.39 0.22,0.7 0.22,0.29 0.55,0.53 0.35,0.22 0.77,0.39 0.43,0.18 0.85,0.33 0.64,0.25 1.32,0.55 0.7,0.29 1.28,0.79 0.59,0.49 0.96,1.23 0.38,0.73 0.38,1.85 0,1.91 -1.26,2.97 -1.23,1.03 -3.75,1.03 -1.7,0 -2.71,-0.35 -1.01,-0.37 -1.51,-0.68 l 0.79,-2.2 q 0.59,0.35 1.4,0.66 0.84,0.31 2.03,0.31 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#008dfe;fill-opacity:1;stroke-width:0.5494"
+         id="path844" />
+      <path
+         d="m 56.71,33.71 v -13.6 h 8.24 v 2.24 h -5.54 v 3.06 h 4.82 v 2.24 h -4.82 v 3.82 h 6.02 v 2.24 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#008dfe;fill-opacity:1;stroke-width:0.5494"
+         id="path846" />
+      <path
+         d="m 74.2,33.71 -0.63,-3.14 h -3.63 l -0.62,3.14 h -2.81 q 0.97,-4.02 1.96,-7.31 0.99,-3.32 1.91,-6.29 h 2.94 q 0.97,2.99 1.92,6.35 0.96,3.34 1.86,7.25 z M 71.79,22.75 q -0.22,0.77 -0.42,1.47 -0.18,0.68 -0.35,1.36 -0.16,0.66 -0.31,1.34 -0.13,0.69 -0.26,1.41 h 2.65 q -0.13,-0.72 -0.26,-1.41 -0.13,-0.68 -0.31,-1.34 -0.15,-0.68 -0.35,-1.36 -0.17,-0.7 -0.39,-1.47 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#008dfe;fill-opacity:1;stroke-width:0.5494"
+         id="path848" />
+      <path
+         d="m 82,19.96 q 1.17,0 2.11,0.26 0.95,0.26 1.63,0.81 0.68,0.55 1.03,1.41 0.38,0.84 0.38,1.98 0,1.19 -0.49,2.15 -0.48,0.97 -1.6,1.47 0.37,0.58 0.79,1.28 0.42,0.68 0.81,1.45 0.4,0.75 0.75,1.52 0.37,0.74 0.64,1.42 H 85.21 Q 84.71,32.4 84.03,31.19 83.37,29.96 82.6,28.7 h -1.41 v 5.01 h -2.7 v -13.4 q 0.39,-0.1 0.86,-0.15 0.48,-0.1 0.96,-0.11 0.49,-0.1 0.93,-0.1 0.44,-0 0.76,-0 z m 2.4,4.44 q 0,-1.08 -0.66,-1.59 -0.66,-0.5 -1.74,-0.5 -0.15,0 -0.37,0 -0.22,0 -0.44,0 v 4.09 h 0.6 q 1.38,0 2,-0.52 0.61,-0.55 0.61,-1.54 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#008dfe;fill-opacity:1;stroke-width:0.5494"
+         id="path850" />
+      <path
+         d="m 94.8,34 q -2.88,0 -4.4,-1.85 -1.52,-1.84 -1.52,-5.25 0,-1.69 0.47,-3.01 0.46,-1.32 1.27,-2.22 0.83,-0.92 1.96,-1.38 1.14,-0.49 2.48,-0.49 0.72,0 1.3,0.14 0.59,0.11 1.03,0.26 0.44,0.15 0.72,0.33 0.31,0.17 0.47,0.26 l -0.71,2.16 q -0.5,-0.33 -1.23,-0.55 -0.7,-0.24 -1.62,-0.24 -0.64,0 -1.26,0.24 -0.59,0.22 -1.07,0.77 -0.47,0.52 -0.77,1.42 -0.29,0.91 -0.29,2.25 0,2.33 0.79,3.58 0.82,1.23 2.64,1.23 1.05,0 1.74,-0.24 0.7,-0.24 1.12,-0.49 l 0.68,2.14 Q 98.03,33.41 97.04,33.71 96.07,34 94.8,34 Z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#008dfe;fill-opacity:1;stroke-width:0.5494"
+         id="path852" />
+      <path
+         d="m 109.3,20.11 v 13.6 h -2.7 V 27.72 H 103 v 5.99 h -2.7 v -13.6 h 2.7 v 5.36 h 3.6 v -5.36 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0.7;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';fill:#008dfe;fill-opacity:1;stroke-width:0.5494"
+         id="path854" />
+    </g>
   </g>
 </svg>
