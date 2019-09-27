@@ -34,17 +34,13 @@ The server will be given URLs to index. Their content is cleaned from any format
   The user will access the search through a website that will send the request to a DecentSearch server. That server will then search through it's internal and external index and in parallel will send a search request for each word to known, trusted servers that are expected to have a result for that word.
   <br clear="both">
 </p>
-
-### Internal Search
+<br clear="both">
 <p>
   <img align="left" width="50%" src="/docs/images/search-internal.svg" alt="client search visualization"/>
   The internal index is searched for matching words, the resulting URLs are ranked by the amount of contained words.
   <br clear="both">
 </p>
-  
-  
-### External Search
-
+<br clear="both">
 <p>
   <img align="left" width="50%" src="/docs/images/search-external.svg" alt="client search visualization"/>
   In the external index only words with a hash that is within its hash range, are searched. The words then are requested from servers that are known to have a hash range that matches that particular word.
