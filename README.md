@@ -9,9 +9,10 @@
 DecentSearch will consists of a network of independent servers. Each contributing its own index data to the network and hosting portions of others. None of these server have to run the same code, just implement the same API.
 </p>
 
-<p style="background-color: #ffdddd; box-shadow: inset 0 0 8px red; border-radius: 8px; padding: 5px 10px">
-  <b>Disclaimer:</b> This project is still <b>work in progress</b> anything written here, may and propably will change in the course of the next months. 
-</p>
+```diff
+- Disclaimer: This project is still work in progress anything written here, 
+- may and propably will change in the course of the next months. 
+```
 
 # How does it work?
 
