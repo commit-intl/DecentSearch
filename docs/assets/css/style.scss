@@ -3,16 +3,19 @@
 
 @import "{{ site.theme }}";
 
-#header {
+#header_wrap {
   img {
     box-shadow: none;
     border: none;
-    max-height: 140px;
+    max-height: 100px;
+    max-width: 50%;
     margin: 0;
+    padding: 0;
   } 
 } 
 
 #forkme_banner {
-  background-color: #008dfe;
-  padding: 10px;
+  top: calc(100% - 22px);
+  background: #008dfe;
+  padding: 5px 10px;
 }
