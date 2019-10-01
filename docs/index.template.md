@@ -1,9 +1,7 @@
 # Specifications
 version: {{version}}
 
-<p align="center">
 DecentSearch will consists of a network of independent servers. Each contributing its own index data to the network and hosting portions of others. None of these server have to run the same code, just implement the same API.
-</p>
 
 ----
 
