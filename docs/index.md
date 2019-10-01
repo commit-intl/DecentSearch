@@ -1,4 +1,4 @@
-# DecentSearch Standard
+# Specifications
 version: WIP 2019-10-1
 
 <p align="center">

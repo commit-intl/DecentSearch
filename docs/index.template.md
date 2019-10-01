@@ -1,4 +1,4 @@
-# DecentSearch Standard
+# Specifications
 version: {{version}}
 
 <p align="center">
