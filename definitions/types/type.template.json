@@ -1,0 +1,9 @@
+{
+  "name": "DecentSearch.ID",
+  "description": "What is this type for?",
+  "validate": {
+    "type": "string",
+    "length": 12,
+    "pattern": "/[0-9a-f]/"
+  }
+}

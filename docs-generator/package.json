@@ -1,0 +1,15 @@
+{
+  "name": "DecenSearch.DocumentationGenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node DocumentationGenerator.js"
+  },
+  "author": "Dustin Hagemeier <dustin@commit.international>",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "glob": "^7.1.4"
+  }
+}

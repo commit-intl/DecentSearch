@@ -1,0 +1,29 @@
+{
+  "name": "Route Template",
+  "description": "What does this route do?",
+  "route": "/example/route/:routeParam",
+  "method": "POST",
+  "validate": {
+    "query": null,
+    "params": {
+      "param": {
+        "type": "string",
+        "isRequired": true,
+        "minLength": 3,
+        "maxLength": 6,
+        "pattern": "/[a-z]/i"
+      }
+    },
+    "payload": {
+      "type": "object",
+      "isRequired": "true",
+      "attributes": [
+        {
+          "key": "id",
+          "type": "DecentSearch.ID",
+          "isRequired": true
+        }
+      ]
+    }
+  }
+}
