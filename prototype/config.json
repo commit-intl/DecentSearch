@@ -4,5 +4,11 @@
     "host": "localhost",
     "key": "./cert-privkey.pem",
     "cert": "./cert.pem"
+  },
+  "DecentSearch": {
+    "identity": {
+      "private": "",
+      "public": "" 
+    }
   }
 }
