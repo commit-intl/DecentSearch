@@ -1,3 +1,0 @@
-The ISO 14698 Standards features two International Standards on biocontamination control for cleanrooms. IEST, the Secretariat and Administrator of ISO Technical Committee 209, helped develop this series of ISO 14698 Standards.
-ISO 14698-1, Cleanrooms and associated controlled environments—Biocontamination control, Part 1: General principles and methods
-ISO 14698-2, Cleanrooms and associated controlled environments—Biocontamination control, Part 2: Evaluation and interpretation of biocontamination data

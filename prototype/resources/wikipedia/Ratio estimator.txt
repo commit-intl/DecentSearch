@@ -1,2 +1,0 @@
-The ratio estimator is a statistical parameter and is defined to be the ratio of means of two random variables. Ratio estimates are biased and corrections must be made when they are used in experimental or survey work. The ratio estimates are asymmetrical and symmetrical tests such as the t test should not be used to generate confidence intervals.
-The bias is of the order O(1/n) (see big O notation) so as the sample size (n) increases, the bias will asymptotically approach 0. Therefore, the estimator is approximately unbiased for large sample sizes.

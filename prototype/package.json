@@ -1,22 +1,30 @@
 {
-  "name": "protosearch",
-  "version": "1.0.0",
-  "description": "",
+  "name": "decent-search-poc",
+  "version": "0.0.0",
+  "description": "DecentSearch proof of concept project",
   "main": "index.js",
   "scripts": {
-    "start": "electron src/test-app/main.js",
-    "test": "electron src/test-app/main.js",
-    "testapp": "electron src/test-app/main.js"
+    "start": "node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commit-intl/DecentSearch.git"
+  },
+  "keywords": [
+    "search",
+    "server",
+    "decentral",
+    "decentralized"
+  ],
   "author": "Dustin Hagemeier <dustin@commit.international>",
-  "license": "ISC",
-  "devDependencies": {
-    "electron": "^4.1.4"
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/commit-intl/DecentSearch/issues"
   },
+  "homepage": "https://github.com/commit-intl/DecentSearch#readme",
   "dependencies": {
-    "@sindresorhus/fnv1a": "github:shynrou/fnv1a#feature/bigint",
-    "chalk": "^2.4.2",
-    "electron-rebuild": "^1.8.5",
-    "js-sha256": "^0.9.0"
+    "@hapi/boom": "^8.0.1",
+    "@hapi/hapi": "^18.4.0",
+    "chalk": "^2.4.2"
   }
 }

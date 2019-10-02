@@ -1,3 +1,0 @@
-The Cadiot–Chodkiewicz coupling in organic chemistry is a coupling reaction between a terminal alkyne and a haloalkyne catalyzed by a copper(I) salt such as copper(I) bromide and an amine base. The reaction product is a 1,3-diyne or di-alkyne.
-
-The reaction mechanism involves deprotonation by base of the terminal alkyne proton followed by formation of a copper(I) acetylide. A cycle of oxidative addition and reductive elimination on the copper centre then creates a new carbon-carbon bond.
