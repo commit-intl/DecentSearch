@@ -1,0 +1,35 @@
+{
+  "name": "Contact",
+  "description": "Object that descripes an entry in the contact list of a DecentSearch server.",
+  "definition": {
+    "type": "object",
+    "attributes": [
+      {
+        "key": "url",
+        "type": "URL",
+        "isRequired": true
+      }, {
+        "key": "identity",
+        "type": "PEM",
+        "isRequired": true
+      }, {
+        "key": "hashRangeURL",
+        "type": "HashRange",
+        "isRequired": true
+      }, {
+        "key": "hashRangeData",
+        "type": "HashRange",
+        "isRequired": true
+      }, {
+        "key": "reports",
+        "type": "array",
+        "isRequired": true,
+        "lengthMin": 0, 
+        "lengthMax": 100,
+        "children": {
+          "type": "Report"
+        }
+      }
+    ] 
+  }
+}

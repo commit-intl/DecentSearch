@@ -1,0 +1,8 @@
+{
+  "name": "PEM",
+  "description": "Privacy-Enhanced Mail format used for certificate encoding.",
+  "definition": {
+    "type": "string",
+    "pattern": "/^-----BEGIN ([A-Z])*-----.*\n-----END \\1-----$/"
+  }
+}
