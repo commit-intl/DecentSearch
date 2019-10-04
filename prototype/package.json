@@ -25,6 +25,7 @@
   "dependencies": {
     "@hapi/boom": "^8.0.1",
     "@hapi/hapi": "^18.4.0",
-    "chalk": "^2.4.2"
+    "chalk": "^2.4.2",
+    "lowdb": "^1.0.0"
   }
 }
