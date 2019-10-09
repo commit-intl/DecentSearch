@@ -6,7 +6,7 @@ const generateRsaPair = () =>
     generateKeyPair('rsa', {
       modulusLength: 4096,
       publicKeyEncoding: {
-        type: 'asd',
+        type: 'spki',
         format: 'pem'
       },
       privateKeyEncoding: {

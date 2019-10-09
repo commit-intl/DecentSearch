@@ -8,20 +8,20 @@
     "params": {
       "param": {
         "type": "string",
-        "isRequired": true,
-        "minLength": 3,
-        "maxLength": 6,
+        "required": true,
+        "min": 3,
+        "max": 6,
         "pattern": "/[a-z]/i"
       }
     },
     "payload": {
       "type": "object",
-      "isRequired": "true",
+      "required": "true",
       "attributes": [
         {
           "key": "id",
           "type": "DecentSearch.ID",
-          "isRequired": true
+          "required": true
         }
       ]
     }

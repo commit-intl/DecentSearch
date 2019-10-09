@@ -7,23 +7,23 @@
       {
         "key": "url",
         "type": "URL",
-        "isRequired": true
+        "required": true
       }, {
         "key": "identity",
         "type": "PEM",
-        "isRequired": true
+        "required": true
       }, {
         "key": "hashRangeURL",
         "type": "HashRange",
-        "isRequired": true
+        "required": true
       }, {
         "key": "hashRangeData",
         "type": "HashRange",
-        "isRequired": true
+        "required": true
       }, {
         "key": "reports",
         "type": "array",
-        "isRequired": true,
+        "required": true,
         "lengthMin": 0, 
         "lengthMax": 100,
         "children": {

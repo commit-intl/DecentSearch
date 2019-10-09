@@ -3,6 +3,7 @@ const fs = require('fs');
 const http2 = require('http2');
 const chalk = require('chalk');
 const CryptoHelper = require('./helper/crypto.helper');
+const ValidationHelper = require('./helper/validation.helper');
 
 class DecentSearchServer {
   constructor(config) {
