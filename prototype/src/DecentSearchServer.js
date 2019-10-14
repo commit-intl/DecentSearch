@@ -3,7 +3,7 @@ const fs = require('fs');
 const http2 = require('http2');
 const chalk = require('chalk');
 const CryptoHelper = require('./helper/crypto.helper');
-const ValidationHelper = require('./helper/validation.helper');
+const RoutesHelper = require('./helper/routes.helper');
 
 class DecentSearchServer {
   constructor(config) {
@@ -29,6 +29,10 @@ class DecentSearchServer {
           process.exit(1);
         });
     }
+
+    if (config.db && config.db.adapter) {
+      this.db = new config.db.adapter(...(config.db.options || []));
+    }
   }
 
   async start() {
@@ -46,9 +50,10 @@ class DecentSearchServer {
     });
 
     // define routes
-    this.server.route([
+    RoutesHelper.register(this.server, [
       require('./routes/indentity.route')(this),
-    ]);
+      ...require('./routes/contacts.route')(this),
+    ])
 
     // start server
     await this.server.start();

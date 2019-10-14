@@ -22,6 +22,8 @@ const root = path.resolve(__dirname, '../../../definitions');
 
 const rawRoutes = importAll('**/!(*.template).json', { cwd: root + '/routes' });
 const rawTypes = importAll('**/!(*.template).json', { cwd: root + '/types' });
+const routes = {};
+const types = {};
 
 const createValidator = (definition) => {
   if (!definition || typeof definition !== 'object') {
@@ -71,15 +73,22 @@ const createValidator = (definition) => {
       break;
     case 'object':
       schema = Joi.object(
-        definition.attributes.reduce((acc, attr) => {
+        (definition.attributes || []).reduce((acc, attr) => {
           acc[attr.key] = createValidator(attr);
           return acc;
-        })
+        }, {})
       );
       break;
+    case 'array':
+      schema = Joi.array();
+      schema = schema.items(...(definition.items || []).map(createValidator));
+      rule('min', 'min');
+      rule('max', 'max');
+      break;
     default:
-    schema = Joi.any();
-      console.warn(chalk.yellow('Unhandled type '+definition.type));
+      if (types)
+        schema = Joi.any();
+      console.warn(chalk.yellow('Unhandled type ' + definition.type));
   }
 
   rule('required', 'required');
@@ -87,24 +96,45 @@ const createValidator = (definition) => {
   return schema;
 }
 
-const types = rawTypes.reduce((acc, typeDef) => {
+rawTypes.reduce((acc, typeDef) => {
   if (!typeDef || typeof typeDef !== 'object') {
-    throw new Error('Encountered Type definition of unknown type!');
+    throw new Error('Encountered type definition of unknown type!');
   }
 
   if (acc[typeDef.name]) {
-    throw new Error(`Duplicated type definition for type ${type.Def.name}!`);
+    throw new Error(`Duplicated type definition for type ${typeDef.name}!`);
   }
 
   acc[typeDef.name] = createValidator({ ...typeDef.definition, required: true })
 
   return acc;
-}, {});
+}, types);
 
-const routes = null;
+rawRoutes.reduce((acc, routeDef) => {
+  if (!routeDef || typeof routeDef !== 'object') {
+    throw new Error('Encountered route definition of unknown type!');
+  }
+
+  if (acc[routeDef.path]) {
+    throw new Error(`Duplicated route definition for path '${routeDef.path}'!`);
+  }
+
+  acc[routeDef.path] = {
+    ...routeDef,
+    validate: routeDef.validate && {
+      params: routeDef.validate.params && createValidator(routeDef.validate.params),
+      query: routeDef.validate.query && createValidator(routeDef.validate.query),
+      payload: routeDef.validate.payload && createValidator(routeDef.validate.payload),
+    },
+  };
+
+  return acc;
+}, routes);
+
+console.log('Validatable Types: ' + Object.keys(types));
+console.log('Validatable Routes: ' + Object.keys(routes));
 
 module.exports = {
   routes,
   types,
-
 };

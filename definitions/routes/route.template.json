@@ -1,7 +1,7 @@
 {
   "name": "Route Template",
   "description": "What does this route do?",
-  "route": "/example/route/:routeParam",
+  "path": "/example/route/:routeParam",
   "method": "POST",
   "validate": {
     "query": null,

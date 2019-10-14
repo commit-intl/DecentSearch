@@ -24,11 +24,11 @@
         "key": "reports",
         "type": "array",
         "required": true,
-        "lengthMin": 0, 
-        "lengthMax": 100,
-        "children": {
+        "min": 0, 
+        "max": 100,
+        "items": [{
           "type": "Report"
-        }
+        }]
       }
     ] 
   }
