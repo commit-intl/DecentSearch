@@ -115,11 +115,13 @@ rawRoutes.reduce((acc, routeDef) => {
     throw new Error('Encountered route definition of unknown type!');
   }
 
-  if (acc[routeDef.path]) {
-    throw new Error(`Duplicated route definition for path '${routeDef.path}'!`);
+  if (!acc[routeDef.path]) {
+    acc[routeDef.path] = {};
+  } else if (acc[routeDef.path][routeDef.method]) {
+    throw new Error(`Duplicated route definition for path '${routeDef.path}' and method '${routeDef.method}'!`);
   }
 
-  acc[routeDef.path] = {
+  acc[routeDef.path][routeDef.method] = {
     ...routeDef,
     validate: routeDef.validate && {
       params: routeDef.validate.params && createValidator(routeDef.validate.params),
@@ -134,7 +136,12 @@ rawRoutes.reduce((acc, routeDef) => {
 console.log('Validatable Types: ' + Object.keys(types));
 console.log('Validatable Routes: ' + Object.keys(routes));
 
+const getRouteValidation = (path, method) => {
+  return routes && routes[path] && routes[path][method];
+}
+
 module.exports = {
+  getRouteValidation,
   routes,
   types,
 };

@@ -8,7 +8,7 @@ module.exports = {
     const sortedRoutes = routes.sort((a, b) => a.path.localeCompare(b.path));
 
     for (let route of sortedRoutes) {
-      const definition = ValidationHelper.routes[route.path];
+      const definition = ValidationHelper.getRouteValidation(route.path, route.method);
 
 
       if (!definition) {

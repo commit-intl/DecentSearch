@@ -4,7 +4,7 @@
   "description": "DecentSearch proof of concept project",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon --ignore 'db' index.dev.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "@hapi/joi": "^16.1.7",
     "chalk": "^2.4.2",
     "glob": "^7.1.4",
-    "lowdb": "^1.0.0"
+    "lowdb": "^1.0.0",
+    "nodemon": "^1.19.4"
   }
 }

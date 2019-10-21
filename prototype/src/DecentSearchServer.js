@@ -7,8 +7,13 @@ const RoutesHelper = require('./helper/routes.helper');
 
 class DecentSearchServer {
   constructor(config) {
+    this.DecentSearchVersion = '0.0.0';
     this.config = config;
     this.server = null;
+    this.hashRange = {
+      url: config.DecentSearch.hashRange.url,
+      data: config.DecentSearch.hashRange.data,
+    }
 
     if (
       config.DecentSearch
@@ -33,6 +38,9 @@ class DecentSearchServer {
     if (config.db && config.db.adapter) {
       this.db = new config.db.adapter(...(config.db.options || []));
     }
+
+    // TODO: change to public address eg. external IP or domain
+    this.address = `https://${config.server.host}:${config.server.port}`;
   }
 
   async start() {
@@ -51,7 +59,7 @@ class DecentSearchServer {
 
     // define routes
     RoutesHelper.register(this.server, [
-      require('./routes/indentity.route')(this),
+      require('./routes/status.route')(this),
       ...require('./routes/contacts.route')(this),
     ])
 

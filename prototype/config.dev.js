@@ -17,6 +17,10 @@ module.exports = {
     identity: {
       private: "",
       public: ""
+    },
+    hashRange: {
+      url: '0-f',
+      data: '0-f',
     }
   }
 }
