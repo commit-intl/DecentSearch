@@ -3,6 +3,7 @@ const path = require('path');
 const glob = require('glob');
 const chalk = require('chalk');
 const Joi = require('@hapi/joi');
+const omit = require('lodash/omit');
 
 function importAll(pattern, options) {
   const files = glob.sync(pattern, options);
@@ -86,11 +87,16 @@ const createValidator = (definition) => {
       rule('max', 'max');
       break;
     default:
-      if (types)
+      if (types && types[definition.type]) {
+        schema = types[definition.type];
+      }
+      else {
         schema = Joi.any();
-      console.warn(chalk.yellow('Unhandled type ' + definition.type));
+        console.warn(chalk.yellow('Unhandled type ' + definition.type));
+      }
   }
 
+  rule('default', 'default');
   rule('required', 'required');
 
   return schema;
@@ -122,12 +128,16 @@ rawRoutes.reduce((acc, routeDef) => {
   }
 
   acc[routeDef.path][routeDef.method] = {
-    ...routeDef,
-    validate: routeDef.validate && {
-      params: routeDef.validate.params && createValidator(routeDef.validate.params),
-      query: routeDef.validate.query && createValidator(routeDef.validate.query),
-      payload: routeDef.validate.payload && createValidator(routeDef.validate.payload),
-    },
+    ...omit(routeDef, 'name', 'description', 'returns', 'validate'),
+    options: {
+      id: routeDef.name,
+      description: routeDef.description,
+      validate: routeDef.validate && {
+        params: routeDef.validate.params && createValidator(routeDef.validate.params),
+        query: routeDef.validate.query && createValidator(routeDef.validate.query),
+        payload: routeDef.validate.payload && createValidator(routeDef.validate.payload),
+      },
+    }
   };
 
   return acc;

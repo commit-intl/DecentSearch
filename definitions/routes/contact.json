@@ -1,0 +1,15 @@
+{
+  "name": "Contact Route",
+  "description": "Returns the hosts own contact data.",
+  "path": "/contact",
+  "method": "GET",
+  "validate": {
+    "query": null,
+    "params": null,
+    "payload": null
+  },
+  "returns": {
+    "type": "Contact",
+    "required": true
+  }
+}

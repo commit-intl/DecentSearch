@@ -9,11 +9,15 @@
         "type": "URL",
         "required": true
       }, {
+        "key": "version",
+        "type": "string",
+        "required": true
+      }, {
         "key": "identity",
         "type": "PEM",
         "required": true
       }, {
-        "key": "hashRangeURL",
+        "key": "hashRangeUrl",
         "type": "HashRange",
         "required": true
       }, {
@@ -23,7 +27,6 @@
       }, {
         "key": "reports",
         "type": "array",
-        "required": true,
         "min": 0, 
         "max": 100,
         "items": [{

@@ -10,7 +10,6 @@ module.exports = {
     for (let route of sortedRoutes) {
       const definition = ValidationHelper.getRouteValidation(route.path, route.method);
 
-
       if (!definition) {
         console.warn(chalk.yellow(`WARNING: Route has no definition '${route.path}'.` ))
         console.log(chalk.yellow(route.path)+' '+chalk.blue(route.method));
@@ -20,7 +19,7 @@ module.exports = {
 
       // TODO: test for equality
 
-      console.log(chalk.green(route.path)+' '+chalk.blue(route.method) + ' '+ definition.name);
+      console.log(chalk.green(route.path)+' '+chalk.blue(route.method) + ' '+ definition.options.id);
       server.route({...definition, handler: route.handler});
       }
     }

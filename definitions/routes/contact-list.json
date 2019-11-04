@@ -1,0 +1,66 @@
+{
+  "name": "Contact List Route",
+  "description": "Returns the hosts own contact data.",
+  "path": "/contact-list",
+  "method": "GET",
+  "validate": {
+    "query": {
+      "type": "object",
+      "attributes": [
+          {
+            "key": "pp",
+            "description": "entries per page",
+            "type": "number",
+            "min": 1,
+            "max": 1000,
+            "default": 100
+          },
+          {
+            "key": "p",
+            "description": "page",
+            "type": "number",
+            "min": 0,
+            "default": 0
+          }
+      ]
+    },
+    "params": null,
+    "payload": null
+  },
+  "returns": {
+    "type": "object",
+    "attributes": [
+      {
+        "key": "ok",
+        "type": "boolean",
+        "required": true
+      },
+      {
+        "key": "p",
+        "description": "page",
+        "type": "number",
+        "min": 0,
+        "required": true
+      },
+      {
+        "key": "pp",
+        "description": "entries per page",
+        "type": "number",
+        "min": 0,
+        "required": true
+      },
+      {
+        "key": "result",
+        "description": "contacts as array, will be as long as 'pp'",
+        "type": "array",
+        "required": true,
+        "min": 0, 
+        "max": 1000,
+        "items": {
+          "type": "Contact",
+          "required": true
+        }
+      }
+    ]
+  }
+}
