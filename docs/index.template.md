@@ -20,3 +20,4 @@ DecentSearch will consists of a network of independent servers. Each contributin
 
 ---
 Interested to contribute? [contact me](mailto:dustin@commit.international)
+

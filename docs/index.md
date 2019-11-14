@@ -1,5 +1,5 @@
 # Specifications
-version: WIP 2019-10-1
+Version: WIP 2019-11-14
 
 DecentSearch will consists of a network of independent servers. Each contributing its own index data to the network and hosting portions of others. None of these server have to run the same code, just implement the same API.
 
@@ -11,12 +11,17 @@ DecentSearch will consists of a network of independent servers. Each contributin
 
 ## Routes
 
-
+- [GET Contact List](/routes/contact_list)
+- [GET Contact](/routes/contact)
 
 ## Types
 
-
+- [HashRange](/types/hashrange)
+- [PEM](/types/pem)
+- [URL](/types/url)
+- [Contact](/types/contact)
 
 
 ---
 Interested to contribute? [contact me](mailto:dustin@commit.international)
+

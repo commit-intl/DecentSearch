@@ -1,5 +1,5 @@
 {
-  "name": "Contact List Route",
+  "name": "Contact List",
   "description": "Returns the hosts own contact data.",
   "path": "/contact-list",
   "method": "GET",

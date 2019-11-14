@@ -1,10 +1,10 @@
 {
-  "name": "DecenSearch.DocumentationGenerator",
+  "name": "DecentSearch.DocumentationGenerator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node DocumentationGenerator.js"
+    "start": "node src/DocumentationGenerator.js"
   },
   "author": "Dustin Hagemeier <dustin@commit.international>",
   "license": "ISC",
