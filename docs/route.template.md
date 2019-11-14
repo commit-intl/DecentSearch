@@ -1,4 +1,4 @@
-[← back](/)
+[← back](./)
 
 # Route: {{name}}
 ## [{{method}}] {{path}}

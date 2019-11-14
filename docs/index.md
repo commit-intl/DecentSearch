@@ -11,15 +11,15 @@ DecentSearch will consists of a network of independent servers. Each contributin
 
 ## Routes
 
-- [GET Contact List](/routes/contact_list)
-- [GET Contact](/routes/contact)
+- [GET Contact List](./routes/contact_list)
+- [GET Contact](./routes/contact)
 
 ## Types
 
-- [HashRange](/types/hashrange)
-- [PEM](/types/pem)
-- [URL](/types/url)
-- [Contact](/types/contact)
+- [HashRange](./types/hashrange)
+- [PEM](./types/pem)
+- [URL](./types/url)
+- [Contact](./types/contact)
 
 
 ---

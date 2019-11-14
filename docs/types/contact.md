@@ -1,4 +1,4 @@
-[← back](/)
+[← back](./)
 
 # Type Contact
 
@@ -7,18 +7,18 @@ Object that descripes an entry in the contact list of a DecentSearch server.
 ## Definition
 
  - [object] *optional*
-   - **url** [[URL]](/types/url) 
+   - **url** [[URL]](./types/url) 
 
    - **version** [string] 
 
-   - **identity** [[PEM]](/types/pem) 
+   - **identity** [[PEM]](./types/pem) 
 
-   - **hashRangeUrl** [[HashRange]](/types/hashrange) 
+   - **hashRangeUrl** [[HashRange]](./types/hashrange) 
 
-   - **hashRangeData** [[HashRange]](/types/hashrange) 
+   - **hashRangeData** [[HashRange]](./types/hashrange) 
 
    - **reports** [array] *optional*
-     - [[Report]](/types/report) *optional*
+     - [[Report]](./types/report) *optional*
 
 
 

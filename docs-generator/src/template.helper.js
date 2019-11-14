@@ -16,7 +16,7 @@ const createDefinitionTree = (def, depth = 0) => {
   if (["boolean", "number", "string", "array", "object"].includes(type)) {
     result += `[${type}] `;
   } else {
-    result += `[\[${type}\]](/types/${toFilename(type)}) `;
+    result += `[\[${type}\]](./types/${toFilename(type)}) `;
   }
   if (!required) {
     result += `*optional*`;

@@ -36,10 +36,10 @@ const dateString = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate(
 const content = {
   version: `WIP ${dateString}`,
   routes: routes.map(route =>
-    `[${route.method} ${route.name}](/routes/${TemplateHelper.toFilename(route.name)})`
+    `[${route.method} ${route.name}](./routes/${TemplateHelper.toFilename(route.name)})`
   ),
   types: types.map(type =>
-    `[${type.name}](/types/${TemplateHelper.toFilename(type.name)})`
+    `[${type.name}](./types/${TemplateHelper.toFilename(type.name)})`
   ),
 };
 

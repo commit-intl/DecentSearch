@@ -1,4 +1,4 @@
-[← back](/)
+[← back](./)
 
 # Route: Contact List
 ## [GET] /contact-list
@@ -26,7 +26,7 @@ Returns the hosts own contact data.
    - **pp** [number] 
 
    - **result** [array] 
-     - [[Contact]](/types/contact) 
+     - [[Contact]](./types/contact) 
 
 
 
