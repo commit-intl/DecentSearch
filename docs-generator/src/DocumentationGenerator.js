@@ -82,3 +82,24 @@ for (let route of routes) {
     });
   fs.writeFileSync(path.resolve(__dirname, `../../docs/routes/${TemplateHelper.toFilename(route.name)}.md`), text, { encoding: 'utf8' });
 }
+
+console.log('reading types.template.md');
+const typeTemplate = fs.readFileSync(path.resolve(__dirname, '../../docs/type.template.md'), { encoding: 'utf8' });
+
+console.log('making and writing types:');
+for (let type of types) {
+  console.log(' - '+type.name);
+
+  let definition = '';
+  if (type.definition) {
+    definition += TemplateHelper.createDefinitionTree(type.definition);
+  }
+
+  const text = TemplateHelper.injectContent(
+    typeTemplate, 
+    {
+      ...type,
+      definition,
+    });
+  fs.writeFileSync(path.resolve(__dirname, `../../docs/types/${TemplateHelper.toFilename(type.name)}.md`), text, { encoding: 'utf8' });
+}
