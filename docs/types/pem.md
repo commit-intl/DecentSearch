@@ -8,7 +8,7 @@ Privacy-Enhanced Mail format used for certificate encoding.
 
 - [string] *optional*
   Rules:
-    - pattern: undefined
+    - pattern: `/^-----BEGIN ([A-Z])*-----.*\n-----END \1-----$/`
 
 
 

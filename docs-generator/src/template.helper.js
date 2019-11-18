@@ -45,7 +45,7 @@ const createDefinitionTree = (def, depth = 0) => {
     result +=
       spacer +
       "  Rules:\n" +
-      createList(rules.map(key => `${key}: ${rules[key]}`)).replace(/(?=^|\n)/g, '  '.repeat(depth+2)) +
+      createList(rules.map(key => `${key}: \`${def[key]}\``)).replace(/(?=^|\n)/g, '  '.repeat(depth+2)) +
       "\n";
   }
 

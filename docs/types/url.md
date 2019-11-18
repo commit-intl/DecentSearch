@@ -8,7 +8,7 @@ Allowed URLs within the DecentSearch network. Currently only http(s) addresses a
 
 - [string] *optional*
   Rules:
-    - pattern: undefined
+    - pattern: `/^https?:\/\/.+$/i`
 
 
 
