@@ -1,6 +1,6 @@
 [← back](./)
 
-# Type {{name}}
+# Type: {{name}}
 
 {{description}}
 

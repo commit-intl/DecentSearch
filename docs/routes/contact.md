@@ -1,7 +1,10 @@
 [← back](./)
 
 # Route: Contact
-## [GET] /contact
+
+| Method | Path |
+|---|---| 
+| GET | /contact |
 
 Returns the hosts own contact data.
 
@@ -13,8 +16,7 @@ Returns the hosts own contact data.
 
 ## Response
 
- - [[Contact]](./types/contact) 
-
+- [[Contact]](./types/contact) 
 
 
 

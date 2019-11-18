@@ -1,7 +1,10 @@
 [← back](./)
 
 # Route: {{name}}
-## [{{method}}] {{path}}
+
+| Method | Path |
+|---|---| 
+| {{method}} | {{path}} |
 
 {{description}}
 

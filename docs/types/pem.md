@@ -1,13 +1,14 @@
 [← back](./)
 
-# Type PEM
+# Type: PEM
 
 Privacy-Enhanced Mail format used for certificate encoding.
 
 ## Definition
 
- - [string] *optional*
-
+- [string] *optional*
+  Rules:
+    - pattern: undefined
 
 
 

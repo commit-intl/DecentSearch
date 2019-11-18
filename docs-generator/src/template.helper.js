@@ -5,10 +5,13 @@ function toFilename(name) {
 const createList = array => array.map(entry => `- ${entry}`).join("\n");
 
 const createDefinitionTree = (def, depth = 0) => {
-  if (!def || typeof def !== 'object') return '';
-  if (Array.isArray(def)) return def.map((def) => createDefinitionTree(def, depth)).join('');
+  if (!def || typeof def !== "object") return "";
+  if (Array.isArray(def))
+    return def.map(def => createDefinitionTree(def, depth)).join("");
 
-  const { key, type, required } = def;
+  const spacer = " ".repeat(depth * 2);
+
+  const { key, type, required, description } = def;
   let result = "";
   if (key) {
     result += `**${key}** `;
@@ -22,14 +25,43 @@ const createDefinitionTree = (def, depth = 0) => {
     result += `*optional*`;
   }
   result += "\n";
-
-  if (type === "object") {
-    result += createDefinitionTree(def.attributes || [], depth+1);
-  } else if (type === "array") {
-    result += createDefinitionTree(def.items || [], depth+1);
+  if (description) {
+    result += description.replace(/(?=^|\n)/g, spacer + "  > ") + "\n\n";
   }
 
-  return " ".repeat(depth * 2) + " - " + result + "\n";
+  let rules = Object.keys(def).filter(
+    rule =>
+      ![
+        "key",
+        "type",
+        "description",
+        "attributes",
+        "items",
+        "required"
+      ].includes(rule)
+  );
+
+  if (rules.length > 0) {
+    result +=
+      spacer +
+      "  Rules:\n" +
+      createList(rules.map(key => `${key}: ${rules[key]}`)).replace(/(?=^|\n)/g, '  '.repeat(depth+2)) +
+      "\n";
+  }
+
+  if (type === "object") {
+    result +=
+      spacer +
+      "  Attributes:\n" +
+      createDefinitionTree(def.attributes || [], depth + 1);
+  } else if (type === "array") {
+    result +=
+      spacer +
+      "  Item Types:\n" +
+      createDefinitionTree(def.items || [], depth + 1);
+  }
+
+  return spacer + "- " + result;
 };
 
 const injectContent = (template, content) =>

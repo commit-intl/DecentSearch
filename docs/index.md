@@ -1,5 +1,5 @@
 # Specifications
-Version: WIP 2019-11-14
+Version: WIP 2019-11-18
 
 DecentSearch will consists of a network of independent servers. Each contributing its own index data to the network and hosting portions of others. None of these server have to run the same code, just implement the same API.
 

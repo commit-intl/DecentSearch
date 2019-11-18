@@ -1,13 +1,14 @@
 [← back](./)
 
-# Type URL
+# Type: URL
 
 Allowed URLs within the DecentSearch network. Currently only http(s) addresses are allowed!
 
 ## Definition
 
- - [string] *optional*
-
+- [string] *optional*
+  Rules:
+    - pattern: undefined
 
 
 
