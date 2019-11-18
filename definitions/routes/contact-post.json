@@ -1,0 +1,25 @@
+{
+  "name": "Contact Suggestion",
+  "description": "Accepts suggestions of a contact for later evaluation.",
+  "path": "/contact",
+  "method": "POST",
+  "validate": {
+    "query": null,
+    "params": null,
+    "payload": {
+      "type": "Contact",
+      "required": true
+    }
+  },
+  "returns": {
+    "type": "object",
+    "required": true,
+    "attributes": [
+      {
+        "key": "ok",
+        "type": "boolean",
+        "required": true
+      }
+    ]
+  }
+}

@@ -59,7 +59,7 @@ class DecentSearchServer {
 
     // define routes
     RoutesHelper.register(this.server, [
-      require('./routes/contact.route')(this),
+      ...require('./routes/contact.route')(this),
       ...require('./routes/contact-list.route')(this),
     ])
 

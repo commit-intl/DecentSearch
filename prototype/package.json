@@ -4,7 +4,8 @@
   "description": "DecentSearch proof of concept project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --ignore 'db' index.dev.js"
+    "start": "nodemon --ignore 'db' index.dev.js",
+    "test:net": "node tests/networking/networking.test.js"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,8 @@
     "lodash": "^4.17.15",
     "lowdb": "^1.0.0",
     "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
   }
 }
