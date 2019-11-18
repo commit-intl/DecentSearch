@@ -16,15 +16,17 @@ Returns the hosts own contact data.
   > entries per page
 
   Rules:
-    - min: `1`    
-- max: `1000`    
-- default: `100`
+     - min: `1`
+     - max: `1000`
+     - default: `100`
+
 - **p** [number] *optional*
   > page
 
   Rules:
-    - min: `0`    
-- default: `0`
+     - min: `0`
+     - default: `0`
+
 
 
 
@@ -37,18 +39,21 @@ Returns the hosts own contact data.
     > page
 
     Rules:
-      - min: `0`
+       - min: `0`
+
   - **pp** [number] 
     > entries per page
 
     Rules:
-      - min: `0`
+       - min: `0`
+
   - **result** [array] 
     > contacts as array, will be as long as 'pp'
 
     Rules:
-      - min: `0`      
-- max: `1000`
+       - min: `0`
+       - max: `1000`
+
     Item Types:
     - [[Contact]](./types/contact) 
 

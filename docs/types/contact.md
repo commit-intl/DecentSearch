@@ -15,8 +15,9 @@ Object that descripes an entry in the contact list of a DecentSearch server.
   - **hashRangeData** [[HashRange]](./types/hashrange) 
   - **reports** [array] *optional*
     Rules:
-      - min: `0`      
-- max: `100`
+       - min: `0`
+       - max: `100`
+
     Item Types:
     - [[Report]](./types/report) *optional*
 

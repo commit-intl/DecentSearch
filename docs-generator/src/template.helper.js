@@ -44,9 +44,12 @@ const createDefinitionTree = (def, depth = 0) => {
   if (rules.length > 0) {
     result +=
       spacer +
-      "  Rules:\n" +
-      createList(rules.map(key => `${key}: \`${def[key]}\``)).replace(/(?=^|\n)/g, '  '.repeat(depth+2)) +
-      "\n";
+      "  Rules:" +
+      rules
+        .map(key => ` - ${key}: \`${def[key]}\``)
+        .join("\n")
+        .replace(/(^|\n)/gs, "\n" + "  ".repeat(depth + 2)) +
+      "\n\n";
   }
 
   if (type === "object") {

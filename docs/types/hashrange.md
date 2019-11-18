@@ -8,7 +8,8 @@ String format of a 64bit HashRange. Hexadecimal values shorter than 16 digits in
 
 - [string] *optional*
   Rules:
-    - pattern: `/^[0-9a-z]{1,16}-[0-9a-z]{1,16}$/i`
+     - pattern: `/^[0-9a-z]{1,16}-[0-9a-z]{1,16}$/i`
+
 
 
 
