@@ -55,6 +55,7 @@ class DecentSearchServer {
       listener: http2Server,
       port: this.config.server.port,
       host: this.config.server.host,
+      routes: this.config.server.routes,
     });
 
     // define routes

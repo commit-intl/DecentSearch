@@ -1,18 +1,19 @@
-const { randomHashRange } = require('../_helper/test.helper');
-const LowDatabaseAdapter = require('../../src/database/LowDatabaseAdapter');
+const { randomHashRange } = require("../_helper/test.helper");
+const LowDatabaseAdapter = require("../../src/database/LowDatabaseAdapter");
 
-module.exports = (index) => ({
+module.exports = index => ({
   server: {
-    port: 3030+index,
+    port: 3030 + index,
     host: "localhost",
     key: "./cert-privkey.pem",
-    cert: "./cert.pem"
+    cert: "./cert.pem",
+    routes: {
+      cors: true,
+    }
   },
   db: {
     adapter: LowDatabaseAdapter,
-    options: [
-      `./db${index}.json`
-    ]
+    options: [`./db/db${index}.json`]
   },
   DecentSearch: {
     identity: {
@@ -21,7 +22,7 @@ module.exports = (index) => ({
     },
     hashRange: {
       url: randomHashRange(),
-      data: randomHashRange(),
+      data: randomHashRange()
     }
   }
 });
