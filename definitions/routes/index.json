@@ -1,0 +1,34 @@
+{
+  "name": "Index Request",
+  "description": "Request indexation of a list of resources",
+  "path": "/index",
+  "method": "POST",
+  "validate": {
+    "query": null,
+    "params": null,
+    "payload": {
+      "type": "array",
+      "items": [
+        {
+          "type": "URL"
+        }
+      ],
+      "required": true
+    }
+  },
+  "returns": {
+    "type": "object",
+    "attributes": [
+      {
+        "key": "ok",
+        "type": "boolean",
+        "required": true
+      },
+      {
+        "key": "message",
+        "type": "string"
+      }
+    ],
+    "required": true
+  }
+}

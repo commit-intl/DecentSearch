@@ -1,0 +1,45 @@
+{
+  "name": "Search Request",
+  "description": "Request known files that match the search query.",
+  "path": "/index",
+  "method": "POST",
+  "validate": {
+    "query": null,
+    "params": null,
+    "payload": {
+      "type": "SearchQuery",
+      "required": true
+    }
+  },
+  "returns": {
+    "type": "array",
+    "items": [
+      {
+        "type": "object",
+        "attribute": [
+          {
+            "key": "url",
+            "type": "URL",
+            "required": true
+          },
+          {
+            "key": "contains",
+            "type": "array",
+            "items": [
+              {
+                "type": "string"
+              }
+            ],
+            "required": true
+          },
+          {
+            "key": "score",
+            "type": "number",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "required": true
+  }
+}

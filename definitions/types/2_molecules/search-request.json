@@ -1,0 +1,24 @@
+{
+  "name": "SearchQuery",
+  "description": "Object that descripes a search query.",
+  "definition": {
+    "type": "object",
+    "attributes": [
+      {
+        "key": "words",
+        "type": "array",
+        "items": [{
+          "type": "string"
+        }],
+        "required": true
+      },
+      {
+      "key": "ttl",
+      "type": "number",
+      "max": 9,
+      "min": 0,
+      "required": true
+    }
+    ] 
+  }
+}
