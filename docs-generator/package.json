@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/DocumentationGenerator.js"
+    "start": "rm -rf ../docs/types/* && rm -rf ../docs/routes/* && node src/DocumentationGenerator.js"
   },
   "author": "Dustin Hagemeier <dustin@commit.international>",
   "license": "ISC",

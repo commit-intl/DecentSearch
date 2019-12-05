@@ -8,9 +8,16 @@ Object that descripes a search query.
 
 - [object] *optional*
   Attributes:
-  - **words** [array] 
+  - **query** [array] 
     Item Types:
-    - [string] *optional*
+    - [object] *optional*
+      Attributes:
+      - **value** [string] 
+      - **type** [string] *optional*
+        Rules:
+           - allow: `*,title,content,author,date`
+           - default: `*`
+
   - **ttl** [number] 
     Rules:
        - max: `9`

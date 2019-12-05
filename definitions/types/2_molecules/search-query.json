@@ -1,0 +1,39 @@
+{
+  "name": "SearchQuery",
+  "description": "Object that descripes a search query.",
+  "definition": {
+    "type": "object",
+    "attributes": [
+      {
+        "key": "query",
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "attributes": [
+              {
+                "key": "value",
+                "type": "string",
+                "required": true
+              },
+              {
+                "key": "type",
+                "type": "string",
+                "allow": ["*", "title", "content", "author", "date"],
+                "default": "*"
+              }
+            ]
+          }
+        ],
+        "required": true
+      },
+      {
+        "key": "ttl",
+        "type": "number",
+        "max": 9,
+        "min": 0,
+        "required": true
+      }
+    ]
+  }
+}
